@@ -39,6 +39,10 @@
             //d) What happens to reference-type members when a Deep Copy is created?
 
             //the original and the copied objects have independent references
+
+            //e) Give one situation where Deep Copy would be safer than Shallow Copy.
+
+            //when changing a copied objects reference type data must not affect the original object
             #endregion
             #endregion
         }
