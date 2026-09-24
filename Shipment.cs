@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace G_NET106_OOP_Assignment05
 {
-    public struct DeliveryAddress
+    public class DeliveryAddress
     {
         public string City;
         public string Street;

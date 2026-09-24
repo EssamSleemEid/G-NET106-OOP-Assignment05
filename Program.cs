@@ -433,6 +433,116 @@
             #endregion
 
             #region Part02
+            DeliveryUtilities.PrintSystemTitle();
+
+            Driver driver01 = new Driver("essam");
+
+            DeliveryCenter center01 = new DeliveryCenter("sinai delevery center");
+
+            center01.Driver = driver01;
+
+
+            DeliveryAddress address01 = new DeliveryAddress("north sinai", "el masaeed", 1);
+
+            DeliveryAddress address02 = new DeliveryAddress("north sinai", "el dahia", 2);
+
+            DeliveryAddress address03 = new DeliveryAddress("north sinai", "el reisa", 3);
+
+            StandardShipment standardShipment01 = new StandardShipment("samsung A34 phone ", 1.2m, 55, "A034", address01);
+
+            center01.AddShipment(standardShipment01);
+
+            ExpressShipment expressShipment01 = new ExpressShipment("laptop dell presession5570 ", 5, 120, "L507", address02, 20);
+
+            center01.AddShipment(expressShipment01);
+
+            InternationalShipment internationalShipment01 = new InternationalShipment("huawei smart watch Gt2", 0.4m, 200, "HG02", address03, "Egypt", 50);
+
+            center01.AddShipment(internationalShipment01);
+
+            center01.PrintAllShipments();
+
+            center01.PrintTrackingStatuses();
+
+            Console.WriteLine("total shipments : " + Shipment.GetTotalShipmentsCreated());
+
+            DeliveryUtilities.PrintSeparator();
+
+            Console.WriteLine("object copying");
+
+            Shipment shipment01 = standardShipment01;
+            Shipment shipment02 = shipment01;
+
+            Console.WriteLine("original : " + shipment01.TrackingCode);
+
+            Console.WriteLine("assigned : " + shipment02.TrackingCode);
+
+            Console.WriteLine("make sure they are same : " + object.ReferenceEquals(shipment01, shipment02));
+
+            DeliveryUtilities.PrintSeparator();
+
+            Console.WriteLine("Shallow Copy");
+
+            Shipment shallowCopy = shipment01.ShallowCopy();
+
+            Console.WriteLine("original address : " + shipment01.Destination.City);
+
+            Console.WriteLine("copied address : " + shallowCopy.Destination.City);
+
+            Console.WriteLine("changing the city ");
+
+            shallowCopy.Destination.City = "raffah";
+
+            Console.WriteLine("original address after rename : " + shipment01.Destination.City);
+
+            Console.WriteLine("copied address after rename : " + shallowCopy.Destination.City);
+
+            Console.WriteLine("make sure they become the same : " +object.ReferenceEquals(shipment01.Destination,shallowCopy.Destination));
+
+            DeliveryUtilities.PrintSeparator();
+
+            Console.WriteLine("Deep Copy");
+
+            shipment01.Destination.City = "Cairo";
+
+            Shipment deepCopy = shipment01.DeepCopy();
+
+            Console.WriteLine("original address : " +shipment01.Destination.City);
+
+            Console.WriteLine("copied address : " +deepCopy.Destination.City);
+
+            Console.WriteLine("changing copied address ");
+
+            deepCopy.Destination.City = "arish";
+
+            Console.WriteLine("original address : " +shipment01.Destination.City);
+
+            Console.WriteLine("copied address : " +deepCopy.Destination.City);
+
+            Console.WriteLine("make sure if they have the Same DeliveryAddress : " +object.ReferenceEquals(shipment01.Destination,deepCopy.Destination));
+
+            DeliveryUtilities.PrintSeparator();
+
+            Console.WriteLine("Extension Methods");
+
+            Console.WriteLine(standardShipment01.GetSummary());
+
+            Console.WriteLine(expressShipment01.GetSummary());
+
+            Console.WriteLine(internationalShipment01.GetSummary());
+
+
+            Console.WriteLine("A034 is Delivered : " + standardShipment01.IsDelivered());
+
+            Console.WriteLine("HG02 is Delivered : " + internationalShipment01.IsDelivered());
+
+            DeliveryUtilities.PrintSeparator();
+
+            Console.WriteLine("Tracking Status");
+
+            standardShipment01.UpdateTrackingStatus("Out For Delivery");
+
+            internationalShipment01.UpdateTrackingStatus("Delivered");
 
             #endregion
         }
