@@ -57,6 +57,10 @@
             //b) What is a static method? Can a static method directly access instance members?
 
             //belong to the class and can be called without creating object and no it can not directly access the instance members
+
+            //c) What is a static constructor, and when is it executed?
+
+            //intializes a static members and its executed automatically once before the first use of the class
             #endregion
             #endregion
         }
