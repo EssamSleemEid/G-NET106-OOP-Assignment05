@@ -87,8 +87,6 @@ namespace G_NET106_OOP_Assignment05
 
         public abstract void PrintShipment();
 
-        public abstract string GetTrackingStatus();
-
         public abstract decimal CalculateInsurance();
 
         public static int TotalShipmentsCreated;
@@ -161,5 +159,7 @@ namespace G_NET106_OOP_Assignment05
 
             return copy;
         }
+
+        partial void OnTrackingStatusChanged(string newStatus);
     }
 }
