@@ -71,6 +71,10 @@
             //a) What is an Extension Method?
 
             //its a method allow you to add functionality to existing type without modifying the original class
+
+            //b) What keyword must be used in the first parameter of an extension method?
+
+            // the keywork : this
             #endregion
             #endregion
         }
