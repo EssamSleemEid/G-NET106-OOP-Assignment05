@@ -75,6 +75,10 @@
             //b) What keyword must be used in the first parameter of an extension method?
 
             // the keywork : this
+
+            //c) Where must an extension method be declared?
+
+            //it must declare inside a static class
             #endregion
             #endregion
         }
