@@ -22,6 +22,12 @@
              copy the object is creating a new separate object
             */
             #endregion
+
+            #region Question02
+            //a) What is a Shallow Copy?
+
+            //it mean create a new object but the reference type member inside it is still refer to the same object as the original
+            #endregion
             #endregion
         }
     }
