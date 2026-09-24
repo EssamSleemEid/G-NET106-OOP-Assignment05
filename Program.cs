@@ -9,6 +9,10 @@
             //a) What happens when you assign one object variable to another object variable?
 
             //both virable is refer to the same object
+
+            //b) Does assigning one object to another create a new object? Explain.
+
+            //no it does not the both virables reference to the same object
             #endregion
             #endregion
         }
