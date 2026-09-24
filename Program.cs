@@ -35,6 +35,10 @@
             //c) What happens to reference-type members when a Shallow Copy is created?
 
             //the original and the copied objects refer to the same referenced objects
+
+            //d) What happens to reference-type members when a Deep Copy is created?
+
+            //the original and the copied objects have independent references
             #endregion
             #endregion
         }
