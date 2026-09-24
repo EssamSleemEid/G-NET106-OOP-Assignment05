@@ -4,7 +4,13 @@
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            #region Part01
+            #region Question01
+            //a) What happens when you assign one object variable to another object variable?
+
+            //both virable is refer to the same object
+            #endregion
+            #endregion
         }
     }
 }
