@@ -91,6 +91,14 @@ namespace G_NET106_OOP_Assignment05
 
         public abstract decimal CalculateInsurance();
 
+        public static int TotalShipmentsCreated;
+
+        static Shipment()
+        {
+            TotalShipmentsCreated = 0;
+            Console.WriteLine("Shipment System Initialized");
+        }
+
         public Shipment(string trackingCode)
         {
             this.trackingCode = trackingCode == null ? "unknown" : trackingCode;
@@ -99,6 +107,7 @@ namespace G_NET106_OOP_Assignment05
             weight = 1;
             deliveryFee = 50;
             Destination = new DeliveryAddress("Cairo", "Unknown Street", 0);
+            TotalShipmentsCreated++;
         }
         public Shipment(string trackingCode, string description, decimal weight, decimal deliveryFee, DeliveryAddress destination)
         {
@@ -107,7 +116,13 @@ namespace G_NET106_OOP_Assignment05
             this.weight = weight > 0 ? weight : 1;
             this.deliveryFee = deliveryFee > 0 ? deliveryFee : 50;
             Destination = destination;
+            TotalShipmentsCreated++;
         }
+        public static int GetTotalShipmentsCreated()
+        {
+            return TotalShipmentsCreated;
+        }
+
         public void UpdateDeliveryFee(decimal newFee)
         {
             if (newFee > 0)
