@@ -53,6 +53,10 @@
 
              the instance feild belong to each individual object
             */
+
+            //b) What is a static method? Can a static method directly access instance members?
+
+            //belong to the class and can be called without creating object and no it can not directly access the instance members
             #endregion
             #endregion
         }
