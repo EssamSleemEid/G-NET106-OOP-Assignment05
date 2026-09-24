@@ -2,6 +2,7 @@
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             #region Part01
@@ -102,6 +103,10 @@
 
             //the declaration and calls of that method are removed by the compiler
             #endregion
+            #endregion
+
+            #region Part02
+
             #endregion
         }
     }
