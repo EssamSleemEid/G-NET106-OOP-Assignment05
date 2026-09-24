@@ -93,6 +93,10 @@
             //b) Why would a developer split one class into multiple files?
 
             //to organize the lage class and separate its functionality into different files
+
+            //c) What is a Partial Method?
+
+            //is a method declared in one part of partial class and implemented in another part of the same class 
             #endregion
             #endregion
         }
