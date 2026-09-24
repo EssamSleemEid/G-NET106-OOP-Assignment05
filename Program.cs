@@ -44,6 +44,16 @@
 
             //when changing a copied objects reference type data must not affect the original object
             #endregion
+
+            #region Question03
+            //a) What is a static field, and how is it different from an instance field?
+
+            /*
+             the static field belong to the class itself and its shared by all objects
+
+             the instance feild belong to each individual object
+            */
+            #endregion
             #endregion
         }
     }
