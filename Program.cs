@@ -84,6 +84,12 @@
 
             //no it can not access private members directly
             #endregion
+
+            #region Question05
+            //a) What is a Partial Class?
+
+            //allow  one class to be divided into multiple files
+            #endregion
             #endregion
         }
     }
