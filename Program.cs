@@ -27,6 +27,10 @@
             //a) What is a Shallow Copy?
 
             //it mean create a new object but the reference type member inside it is still refer to the same object as the original
+
+            //b) What is a Deep Copy?
+
+            //it mean create a new object and also create independent copies of it reference type members
             #endregion
             #endregion
         }
