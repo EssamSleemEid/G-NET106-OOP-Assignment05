@@ -66,6 +66,12 @@
 
             //contain only static members and we can not create object from it 
             #endregion
+
+            #region Question04
+            //a) What is an Extension Method?
+
+            //its a method allow you to add functionality to existing type without modifying the original class
+            #endregion
             #endregion
         }
     }
