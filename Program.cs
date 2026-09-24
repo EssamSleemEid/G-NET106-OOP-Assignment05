@@ -79,6 +79,10 @@
             //c) Where must an extension method be declared?
 
             //it must declare inside a static class
+
+            //d) Can an extension method access private members of the class it extends?
+
+            //no it can not access private members directly
             #endregion
             #endregion
         }
