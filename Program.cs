@@ -97,6 +97,10 @@
             //c) What is a Partial Method?
 
             //is a method declared in one part of partial class and implemented in another part of the same class 
+
+            //d) What happens if a declared partial method has no implementation?
+
+            //the declaration and calls of that method are removed by the compiler
             #endregion
             #endregion
         }
