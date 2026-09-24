@@ -89,6 +89,10 @@
             //a) What is a Partial Class?
 
             //allow  one class to be divided into multiple files
+
+            //b) Why would a developer split one class into multiple files?
+
+            //to organize the lage class and separate its functionality into different files
             #endregion
             #endregion
         }
