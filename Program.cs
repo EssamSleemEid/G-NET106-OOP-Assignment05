@@ -61,6 +61,10 @@
             //c) What is a static constructor, and when is it executed?
 
             //intializes a static members and its executed automatically once before the first use of the class
+
+            //d) What is a static class? Can you create an object from a static class?
+
+            //contain only static members and we can not create object from it 
             #endregion
             #endregion
         }
